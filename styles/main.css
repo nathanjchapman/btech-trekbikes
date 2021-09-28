@@ -240,6 +240,28 @@ footer {
     padding: 2rem 1rem 1rem;
 }
 
+.footer__nav {
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer__nav a {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+}
+
 .newsletter__form {
     /*max-width: 20rem;*/
 }
@@ -263,6 +285,10 @@ footer {
     footer {
         flex-direction: column;
         align-items: center;
+    }
+
+    .footer__nav {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -350,4 +376,20 @@ footer {
 
 .bike__price {
     font-weight: 300;
+}
+
+
+
+/* Scroll-to-top button
+   ========================================================================== */
+#to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 99;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.25rem;
+    /*box-shadow: 0 0.125rem 0.75rem var(--gray);*/
 }

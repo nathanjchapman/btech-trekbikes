@@ -6,8 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/normalize.css?v=2">
+    <link rel="stylesheet" href="./styles/main.css?v=2">
+    <script defer src="./scripts/index.js"></script>
 </head>
 <body>
     <header>
@@ -43,7 +44,25 @@
         </article>
     </main>
 
-    <footer>        
+    <footer>
+        <div class="footer__nav">
+            <a href="./index.html">
+                <figure class="logo__figure">
+                    <img class="logo" src="./images/trek_logo.png" alt="Trek Mountain Bikes">
+                </figure>
+            </a>
+            <div class="footer__links">
+                <a href="./index.html">Bikes</a>
+                <a href="./about.html" class="active">About</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+        <form action="" class="newsletter__form">
+            <p>
+                Sign up for our newsletter:
+                <input class="newsletter" type="text" placeholder="Email address&hellip;">
+            </p>
+        </form>
         <p>Copyright ©2021 Trek Mountain Bikes, LLC. All rights reserved.</p>
         <p>
             <span class="social__icons">
@@ -53,5 +72,6 @@
             </span>
         </p>
     </footer>
+    <button id="to-top-button" class="button" title="Go to top">↑</button>
 </body>
 </html>
